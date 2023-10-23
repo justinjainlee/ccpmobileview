@@ -1,0 +1,151 @@
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333; 
+    text-align: center; 
+}
+
+nav ul li {
+    display: inline; 
+    margin-right: 20px; 
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3498db; 
+}
+
+nav ul li a.active {
+    color: #ffcc00;
+}
+
+nav ul li a.active::before {
+    content: "•";
+    margin-right: 5px;
+}
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+
+.skip{
+    position : relative;
+  }
+  
+.skip a{
+    position: absolute;
+    top: -40px;}
+  
+  
+.skip a:focus{
+    top: 20px;}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-gap: 10px;
+
+}
+
+.container > div {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 5px;
+}
+
+.container h2, .container h3, .container p, .container ul {
+    text-align: center; 
+}
+
+.container img {
+    max-width: 100%;
+    height: 150px; 
+}
+
+.container h2 {
+    font-family: Arial, sans-serif;
+    font-size: 1.5em; 
+    font-weight: bold; 
+    text-align: center; 
+    margin: 10px 0; 
+    padding: 5px;
+    background-color: #333; 
+    color: #ffcc00;
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 10px; 
+    text-align: center; 
+}
+
+.fifth{
+    grid-column: 1 / span 2;
+}
+
+.gallery img, .gallery video {
+    max-width: 100%;
+    height: 150px;
+    width: 100%;
+    max-height: 200px;
+    padding: 0px;
+}
+
+@media (prefers-reduced-motion: reduce){
+    .intro img, .gallery img, .gallery video {
+        display: none; /* Hide GIFs when the user prefers reduced motion */
+    }
+}
+
+.container h3 {
+    font-family: Arial, sans-serif; 
+    font-size: 1.2em; 
+    font-weight: normal; 
+    text-align: left; 
+    margin: 10px 0; 
+    padding: 5px; 
+    background-color: #f0f0f0;
+}
+
+.container p{
+    margin : 10px 10px;
+    text-align: left;
+
+}
+
+.container h2, .container h3 {
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.container h2 {
+    background-color: #f8b88b;
+    color: #6e4f4e; 
+}
+
+.container h3 {
+    background-color: #9eebdf; 
+    color: #364f6b;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 5px;
+
+}
