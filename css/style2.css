@@ -138,6 +138,9 @@ nav ul li a.active::before {
 .container ul li {
     list-style-type: none;
     border: 1px solid #ddd;
+    background-color: khaki;
+    color: black;
+    border-radius: 15px 30px 15px;
     padding: 10px; 
     text-align: center; 
     align-items: center;
